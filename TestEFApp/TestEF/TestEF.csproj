@@ -1,0 +1,21 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net5.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="5.0.8">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\EFDataAccessLib\EFDataAccessLib.csproj" />
+    <ProjectReference Include="..\EmployessLib\EmployessLib.csproj" />
+    <ProjectReference Include="..\MessageServices\MessageServices.csproj" />
+    <ProjectReference Include="..\SystemLib\SystemLib.csproj" />
+  </ItemGroup>
+
+</Project>
